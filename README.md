@@ -7,3 +7,18 @@
 ![image](https://github.com/RESMIRNAIR/HALF_ADDER/assets/154305926/020e1531-1c11-42e5-9f27-f09ba459984d)
 # Carry = A AND B
 ![image](https://github.com/RESMIRNAIR/HALF_ADDER/assets/154305926/988ae131-0822-4d23-941b-eaafad349a72)
+# Verilog code:
+module HalfAdder(a,b,sum,carry);
+
+input a,b;
+
+output sum,carry;
+
+xor (sum,a,b);
+
+and (carry,a,b);
+
+endmodule
+
+# output:
+![image](https://github.com/vamsi950237/HALF_ADDER/assets/169907853/ca78a268-aeca-4963-b5dd-84475453f70d)
